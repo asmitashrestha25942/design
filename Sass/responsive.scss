@@ -1,3 +1,5 @@
+$secondarycolor:#F9AA4A;
+
 @media only screen and (max-width: 1024px) {
     .bar{
         width: 48%;
@@ -60,23 +62,8 @@
         width:100%;
     
     }
-    .welcome-left{
-     
-        h1{
-            font-size: 32px;
-        }
-        p{
-            font-size: 22px;
-            left:2px;
-        }
 
-    }
-    .welcome-right{
-
-        .btn-primary{
-            margin-bottom: 40px;
-        }
-    }
+    
     .product-img{
         img{
             width:80%;
@@ -144,10 +131,44 @@
 
         }
     }
-    
+    .aboutus-body{
+        margin-bottom: 15px;
+    }
 
 
-    
+//gallery
+.gallery-page{
+    height:500px;
+}
+.gallery-image{
+    height:180px;
+    width:100%;
+    img{
+        height: 100%;
+        width: 100%;
+        border:8px solid #fff;
+    }
+    .gallery-btn{
+        border-radius: 30px;
+        font-size: 12px;
+        margin-left:30px;
+
+    }
+}
+.gallery-images{
+    height:180px;
+    .gallery-btn{
+        border-radius: 30px;
+        font-size: 12px;
+        margin-left:30px;
+
+    }
+}
+.gallery-name{
+    h3{
+        font-size: 13px;
+    }
+}
 
 }
 
@@ -216,6 +237,7 @@
         }
         
     }
+
     
     .bar{
         padding:11px;
@@ -249,44 +271,14 @@
     }
    
     .welcome-left{
-        width:100%;
-        position: none;
-        overflow: none;
-        z-index: none;
-        clip-path: none;
-        background-color: $secondarycolor;
-        height: 100%;
-        img{
-            height:auto;
-        }
-        h4{
-            font-size: 36px;
-        }
-        p{
-            font-size: 16px;
-        }
+        display:none;
     }
     .welcome-right{
-        color: #fff;
-        position: absolute;
-        z-index: 10;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 32% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         right: 0;
-        background-color: $secondarycolor;
         width: 100%;
         height: 100%;
-        h2{
-            font-size: 22px;
-        }
-        h4{
-            font-size: 18px;
-            line-height: 40px;
-
-
-        }
-        p{
-            font-size: 16px;
-        }
+       
     }
     .best-image{
         width:90%;
@@ -322,8 +314,61 @@
     margin-left: 50px;
     margin-bottom: 30px;
 
+
+}
+//gallery
+.aboutus-body{
+    p{
+        margin-left: 18px;
+    }
+}
+.gallery-page{
+    height:2000px;
+    clip-path: polygon(50% 3%, 100% 0, 100% 100%, 50% 96%, 0 100%, 0 0);
+
+}
+.gallery-image{
+    margin-bottom: 100px;
+    height:300px;
+    margin-top: 20px;
+    .gallery-btn{
+        margin-left: 100px;
+        padding:6px 8px;
+        font-size: 20px;
+
+    }
+
+
+}
+.gallery-images{
+    margin-bottom: 100px;
+    height:300px;
+    .gallery-btn{
+        margin-left: 100px;
+        padding:3px 7px;
+        font-size: 20px;
+
+    }
+
+}
+.gallery-name{
+    color:#fff;
+    h3{
+    font-size: 22px;
+    }
+}
+//contact page
+.contact-body{
+    h2{
+        margin-top:40px;
+    }
+}
+#map{
+    width:100%;
+    height:450px;
 }
 }
+
 @media only screen and (max-width: 375px){
 
     .welcome-left{
